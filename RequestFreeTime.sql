@@ -1,3 +1,4 @@
+USE CompanyProjects;
 SELECT LastName, FirstName, MidName, 100 - SUM(TimePercentage) AS 'Free Time (%)'
 	FROM Participation JOIN Employees ON EmployeeID = Employees.ID
 		GROUP BY LastName, FirstName, MidName
